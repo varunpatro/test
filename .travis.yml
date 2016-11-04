@@ -1,4 +1,10 @@
-language: python
+language:
+  - python
+  - ruby
 python:
   - "2.7"
-script: python pytest.py
+rvm:
+  - 2.2
+script:
+  - python pytest.py
+  - ruby rbtest.rb
